@@ -10,11 +10,11 @@ class MyComponent extends Component {
         favoriteNumber: PropTypes.number.isRequired
     }
     render(){
-        const {name, favoriteNumber, Children} = this.props;
+        const {name, favoriteNumber, children} = this.props;
         return (
             <>
             안녕하세요, 제 이름은 {name}입니다. <br/>
-            children 값은 {Children}입니다. <br/>
+            children 값은 {children}입니다. <br/>
             제가 좋아하는 숫자는 {favoriteNumber}입니다.
             </>
         )
