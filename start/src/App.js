@@ -1,7 +1,10 @@
-import './App.css';
+import { Component } from "react";
 
-function App(){
-  const name = '초지일관';
-  return <div className='goodday'>{name}</div>;
+class App extends Component {
+  render(){
+    const name = '유지경성';
+    return <div className="react">{name}</div>
+  }
 }
+
 export default App;
