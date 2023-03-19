@@ -1,7 +1,7 @@
 import MyComponent from "./MyComponent";
 
 const App = () => {
-  return <MyComponent name = "react"/>;
+  return <MyComponent/>;
 };
 
 export default App;
