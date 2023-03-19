@@ -1,9 +1,7 @@
+import './App.css';
 function App() {
-  const name = "반응";
-  return 
-    <div>
-      {name === '리액트' && <h1>리액트입니다.</h1>}
-    </div>;
+    const name = undefined;
+    return name || '값이 undefined입니다.';
 }
 
 export default App;
