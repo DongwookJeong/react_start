@@ -1,7 +1,7 @@
 import './App.css';
 function App() {
-    const name = '정신차려';
-    return <div>{name}</div>;
+    const name = undefined;
+    return <div>{name || '리액트'}</div>;
 }
 
 export default App;
