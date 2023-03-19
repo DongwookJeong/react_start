@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const MyComponent = ({name, children}) => {
     return (
         <>
@@ -11,4 +13,7 @@ MyComponent.defaultProps = {
     name : '삶'
 };
 
+MyComponent.propTypes = {
+    name : PropTypes.string
+}
 export default MyComponent;
