@@ -1,3 +1,11 @@
+import Say from "./Say";
+
+const App = () =>{
+  return <Say/>
+}
+
+export default App;
+/* part 3
 import Counter from "./Counter";
 
 const App = () => {
