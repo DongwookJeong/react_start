@@ -1,3 +1,11 @@
+import EventPractice from "./EventPractice";
+
+const App = () => {
+  return <EventPractice/>;
+}
+
+export default App;
+/* part 3-2
 import Say from "./Say";
 
 const App = () =>{
@@ -5,13 +13,14 @@ const App = () =>{
 }
 
 export default App;
-/* part 3
+/* part 3-1
 import Counter from "./Counter";
 
 const App = () => {
   return <Counter/>
 }
 export default App;
+
 /* part 2(리다기)
 import MyComponent from "./MyComponent";
 
