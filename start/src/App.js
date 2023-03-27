@@ -1,3 +1,16 @@
+import { Component } from "react";
+import ValidationSample from "./ValidationSample";
+
+class App extends Component {
+  render(){
+    return(
+      <ValidationSample/>
+    )
+  }
+}
+
+export default App;
+/* part 4
 import EventPractice from "./EventPractice";
 
 const App = () => {
