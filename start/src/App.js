@@ -1,4 +1,17 @@
 import { Component } from "react";
+import IterationSample from "./ItereationSample";
+
+class App extends Component{
+  render(){
+    return(
+      <IterationSample/>
+    )
+  }
+}
+
+export default App;
+/* part 5 ref scroll
+import { Component } from "react";
 import ScrollBox from "./ScrollBox";
 
 class App extends Component {
