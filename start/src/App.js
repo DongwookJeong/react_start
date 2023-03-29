@@ -4,7 +4,11 @@ import ScrollBox from "./ScrollBox";
 class App extends Component {
   render(){
     return(
-      <ScrollBox/>
+      <div>
+      <ScrollBox ref={(ref)=>this.ScrollBox=ref}/>
+
+      <button onClick={()=>this.ScrollBox.scrollToBottom()}>아래로</button>
+      </div> 
     )
   }
 }
