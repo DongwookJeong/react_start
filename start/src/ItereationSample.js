@@ -1,7 +1,33 @@
+import { useState } from "react"
+
 const IterationSample = () => {
-    const names = ['눈사람','얼음','눈','바람']
-    const nameList = names.map((name, index) => <li key={index}>{name}</li>)
-    return <ul>{nameList}</ul>
-}
+    const [names, setNames] = useState([
+        {id: 1, text:'눈사람'},
+        {id: 2, text:'얼음'},
+        {id: 3, text:'사람'},
+        {id: 4, text:'바람'}
+    ])
+    const [inputText, setInPutText]=useState('')
+    const [nextId, setNextId]=useState(5) //! 새로운 항목을 추가할 때 사용할 id
+    const onChange = e => setInPutText(e.target.value)
+
+    const onClick = () => {
+        const nextNames = names.concat({
+            id: nextId, // ! nextId 값을 id로 설정하고
+            text: inputText
+        })
+        setNextId(nextId + 1) // ! nextId 값에 1을 더해 준다.
+        setNames(nextNames) // ! namse 값을 업데이트 한다.
+        setInPutText('') // ! inputText를 비운다.
+    }
+    
+    const namesList = names.map(name => <li key={name.id}>{name.text}</li>)
+    return (
+        <>
+            <input value = {inputText} onChange={onChange}/>
+            <button onClick={onClick}>추가</button>
+            <ul>{namesList}</ul>
+        </>)
+} 
 
 export default IterationSample 
