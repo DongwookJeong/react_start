@@ -7,14 +7,12 @@ function reducer(state, action){
     }
 }
 const Info = () => {
-    const[state, dispatch] = useReducer(reducer, {
-        name: '',
-        nickname: ''
+    const [state, onChange] = useInputs({
+        name:'',
+        nickname:''
     })
-    const {name, nickname} = state;
-    const onChange = e => {
-        dispatch(e.target)
-    }
+    const {name, nickname}= state;
+    
 
     return (
         <>
